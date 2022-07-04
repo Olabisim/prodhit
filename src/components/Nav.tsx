@@ -2,25 +2,25 @@
 import 'alpinejs'
 import './index.css'
 
-const alpinetemplate:string = `
-<button id="mobile-icon" className="md:hidden">
-<i onClick="changeIcon(this)" className="fa-solid fa-bars"></i>
-</button>
-`
+// const alpinetemplate:string = `
+// <button id="mobile-icon" className="md:hidden">
+// <i onClick="changeIcon(this)" className="fa-solid fa-bars"></i>
+// </button>
+// `
 
 
 export const Nav:React.FC = () => {
         return (
                 <>
 
-                        <header className="h-20 nav-header mt-2 pt-0">
+                        <header className="h-20 nav-header mt-2 pt-0 p-10">
                                 <nav className="relative px-2 py-0">
                                 
                                 <div className="container mx-auto flex justify-between items-center">
                                         <div className='flex'>
 
                                                 <img src="../../Group.svg" alt="Tailwindcss Navigation" />
-                                                <h2 className='Navlogo text-white text-xl font-bold mt-2 p-4 pt-2' > PRODHIT</h2>
+                                                <h2 className='Navlogo text-white text-2xl font-semibold mt-2 p-4 pt-2 tracking-wide' > PRODHIT</h2>
                                         </div>
 
                                         <ul className="hidden md:flex space-x-12">
@@ -50,7 +50,7 @@ export const Nav:React.FC = () => {
                                         </div>
                                         
                                         {/* <!-- Mobile menu icon --> */}
-                                        <div dangerouslySetInnerHTML={{__html: alpinetemplate}} ></ div>
+                                        {/* <div dangerouslySetInnerHTML={{__html: alpinetemplate}} ></ div> */}
                                         
                                         </div>
                                 

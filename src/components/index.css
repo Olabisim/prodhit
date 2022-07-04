@@ -40,29 +40,7 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
         width: 40px;
         height: 40px;
 }
-/* 
-@-webkit-keyframes gradient{
-        0% {
-          background-position: 0 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-           background-position: 0% 50%;
-        }
-      }
-      @keyframes gradient{
-        0% {
-          background-position: 0 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-           background-position: 0% 50%;
-        }
-      } */
+
 
 
 .nav-lisa {
@@ -87,5 +65,58 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
         color: white;
 }
 .nav-header {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.main-main {
+        height: 600px;
+         /* background: linear-gradient(62deg, #B106FA, #E73C7E, #23A6D5, #2D3FFB);
+           animation: gradient 15s ease infinite; 
+            background-size: 400% 400%; */
+        
+      }
+.main-main span {
+        color: #BD00FF;
+}
+.shade-white {
+        color: rgba(255, 255, 255, 0.7);
+}
+      /* @-webkit-keyframes gradient{
+        0% {
+          background-position: 0 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+           background-position: 0% 50%;
+        }
+      }
+      @keyframes gradient{
+        0% {
+          background-position: 0 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+           background-position: 0% 50%;
+        }
+      } */
+.nav-landingside-1 img {
+        border-top-left-radius: 150px 150px;
+}
+.nav-landingside-2 img {
+        border-top-right-radius: 150px 150px;
+        border-bottom-left-radius: 150px 150px;
+}
+.nav-landingside-3 img {
+        border-top-right-radius: 150px 150px;
+        border-bottom-left-radius: 150px 150px;
+}
+.nav-landingside-4 img {
+        border-bottom-right-radius: 150px 150px;
+}
+.main-main .Nav-button {
+        padding: 15px 40px;
+        margin-top: 30px;
 }
