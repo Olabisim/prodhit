@@ -50,7 +50,7 @@ export const Footer = () => {
                         
                         </div>
 
-                        <div className="bottom-footer tracking-widest text-base lg:text-lg">
+                        <div className="bottom-footer tracking-widest text-base lg:text-lg mt-16">
 
                                 <p className="text-center">© Copyright 2022 by Prodhit</p>
 

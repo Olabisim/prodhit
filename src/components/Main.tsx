@@ -5,21 +5,21 @@ export const Main:React.FC = () => {
                         
                         <div className="main-main p-10 ">
 
-                                <div className="flex">
+                                <div className="main-main-in">
 
-                                        <div className="w-1/2 text-white">
+                                        <div className="text-white">
 
-                                                <h2 className="text-5xl pt-20 leading-snug font-semibold tracking-wide">
+                                                <h2 className="text-3xl lg:text-5xl pt-20 leading-relaxed lg:leading-snug font-semibold tracking-wide">
                                                         Become A <span>Shareholder</span> <br /> Of Your Favorite <br /> <span>Music</span>
 
                                                 </h2>
-                                                <p className="tracking-widest font-semibold mt-5 mb-5 text-lg shade-white pb-10"> 
+                                                <p className="tracking-widest font-semibold mt-5 mb-5 lg:text-lg shade-white pb-10"> 
                                                         Enabling You Become A Shareholder <br /> Of Musics From Spotify.
                                                 </p>
                                                 <a href="#ss" className="Nav-button text-white mt-3" role="button" style={{padding: '15px 40px !important', marginTop: '30px'}} >Connect Wallet</a>
 
                                         </div>
-                                        <div className="w-1/2">
+                                        <div className="">
                                                 <div className="flex">
 
                                                         <div className="w-1/2 m-3 mr-0 nav-landingside-1">
@@ -51,10 +51,9 @@ export const Main:React.FC = () => {
 
                         <div className="main-main2 text-white mt-20 text-center" >
                                 <div>
-                                        <h2 className="font-bold text-4xl tracking-wide">Musical Genres</h2>
-
+                                        <h2 className="font-bold text-3xl lg:text-4xl lg:tracking-wide">Musical Genres</h2>
                                 </div>
-                                <div className="mt-20">
+                                <div className="lg:mt-20 mt-10">
                                         <div className="ul-main">
                                                 <ul>
                                                         <li><a href="#jzz">Jazz</a></li>
@@ -72,10 +71,10 @@ export const Main:React.FC = () => {
                                                         <div className="main-content-box p-4 text-left ml-8 mr-8">
                                                                 
                                                                 <img src="../../Gen1.png" alt="fir" />
-                                                                <h2 className="font-bold text-2xl p-2 pl-0 tracking-widest ">Are you a Music Artist ?</h2>
-                                                                <p className="tracking-wide text-lg font-bold mb-7">You Can Submit Your Song <br />For Distribution</p>
-                                                                <button className="text-center tracking-wide text-xl font-medium">
-                                                                        <span className="text-4xl pr-4">+</span>
+                                                                <h2 className="font-bold text-lg lg:text-2xl p-2 pl-0 tracking-wide lg:tracking-widest ">Are you a Music Artist ?</h2>
+                                                                <p className="tracking-wide text-sm lg:text-lg font-bold mb-7">You Can Submit Your Song <br />For Distribution</p>
+                                                                <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
+                                                                        <span className="text-2xl lg:text-4xl pr-4">+</span>
                                                                         Submit Music
                                                                 </button>
                                                         </div>
@@ -83,28 +82,28 @@ export const Main:React.FC = () => {
                                                         <div className="main-content-box p-4 text-left ml-8 mr-8">
                                                                 
                                                                 <img src="../../Gen2.png" alt="fir" />
-                                                                <h2 className="font-bold text-2xl p-2 pl-0 tracking-widest ">The Box</h2>
-                                                                <p className="tracking-wide text-lg font-bold mb-7">Roddy Ricch <br />85% Available Stocks </p>
-                                                                <button className="text-center tracking-wide text-xl font-medium">
+                                                                <h2 className="font-bold text-lg lg:text-2xl p-2 pl-0 tracking-wide lg:tracking-widest">The Box</h2>
+                                                                <p className="tracking-wide text-sm lg:text-lg font-bold mb-7">Roddy Ricch <br />85% Available Stocks </p>
+                                                                <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
                                                                         Execute Order
                                                                 </button>
                                                         </div>
                                                         <div className="main-content-box p-4 text-left ml-8 mr-8">
                                                                 
                                                                 <img src="../../Gen1.png" alt="fir" />
-                                                                <h2 className="font-bold text-2xl p-2 pl-0 tracking-widest ">No Guidance</h2>
-                                                                <p className="tracking-wide text-lg font-bold mb-7">Chris Brown ft Drake <br />65% Available Stocks</p>
-                                                                <button className="text-center tracking-wide text-xl font-medium">
+                                                                <h2 className="font-bold text-lg lg:text-2xl p-2 pl-0 tracking-wide lg:tracking-widest">No Guidance</h2>
+                                                                <p className="tracking-wide text-sm lg:text-lg font-bold mb-7">Chris Brown ft Drake <br />65% Available Stocks</p>
+                                                                <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
                                                                         Execute Order
                                                                 </button>
                                                         </div>
                                                         <div className="main-content-box p-4 text-left ml-8 mr-8">
                                                                 
                                                                 <img src="../../Gen2.png" alt="fir" />
-                                                                <h2 className="font-bold text-2xl p-2 pl-0 tracking-widest ">Are you a Music Artist ?</h2>
-                                                                <p className="tracking-wide text-lg font-bold mb-7">You Can Submit Your Song <br />For Distribution</p>
-                                                                <button className="text-center tracking-wide text-xl font-medium">
-                                                                        <span className="text-4xl pr-4">+</span>
+                                                                <h2 className="font-bold text-lg lg:text-2xl p-2 pl-0 tracking-wide lg:tracking-widest ">Are you a Music Artist ?</h2>
+                                                                <p className="tracking-wide text-sm lg:text-lg font-bold mb-7">You Can Submit Your Song <br />For Distribution</p>
+                                                                <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
+                                                                        <span className="text-2xl lg:text-4xl pr-4">+</span>
                                                                         Submit Music
                                                                 </button>
                                                         </div>
@@ -134,7 +133,7 @@ export const Main:React.FC = () => {
                                                         </p>
                                                 </div>
                                         </div>
-                                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center mt-36 m-12">
+                                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center mt-36 m-12 second_grid_adjustment">
                                                 <div className="justify-center w-full pr-10 items-center">
                                                         <h2 className="text-4xl font-semibold ">How it <span>Works </span></h2>
                                                         <br />
@@ -162,8 +161,8 @@ export const Main:React.FC = () => {
 
                         <div className="main-main4 text-center text-white mt-20">
                                 <div>
-                                        <h2 className="text-3xl font-bold tracking-wide">Our <span>Team</span></h2>
-                                        <p className="tracking-wide" >Our Highly Qualified And Skilled Team</p>
+                                        <h2 className="text-3xl lg:text-4xl font-bold tracking-wide mb-5">Our <span>Team</span></h2>
+                                        <p className="tracking-wide text-base lg:text-xl font-bold" >Our Highly Qualified And Skilled Team</p>
                                 </div>
                                 <br />
                                 <div className="main-main4-overflow">
