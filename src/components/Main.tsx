@@ -114,6 +114,81 @@ export const Main:React.FC = () => {
                                         </div>
                                 </div>
                         </div>
+
+                        <div className="main-main3 text-white">
+
+                                <div className="container mx-auto">
+                                                
+                                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center mt-36 m-12">
+                                                <div className="flex justify-center">
+                                                        <img src="../../last2.png" alt="last pic" />
+                                                </div>
+
+                                                <div className="justify-center w-full pr-10 items-center">
+                                                        <h2 className="text-4xl font-semibold ">What is <span>Prodhit? </span></h2>
+                                                        <br />
+                                                        <p className="text-xl tracking-wider leading-relaxed font-semibold">     Prodhit Is The Fastest Growing Music
+                                                                Platform Where You Can Buy Shares
+                                                                From Songs On Spotify And Also Submit 
+                                                                Your Song For Distribution And Earn.
+                                                        </p>
+                                                </div>
+                                        </div>
+                                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center mt-36 m-12">
+                                                <div className="justify-center w-full pr-10 items-center">
+                                                        <h2 className="text-4xl font-semibold ">How it <span>Works </span></h2>
+                                                        <br />
+                                                        <p className="text-xl tracking-wider leading-relaxed font-semibold">     
+                                                                It’s Easy.After Connecting Your Wallet
+                                                                And Buying Shares From Any Song By
+                                                                Clicking On “EXECUTE ORDER”,All Money
+                                                                Collected Is Used For Advertisement,
+                                                                Generating 10 BILLION Youtube Impression
+                                                                With As Low As $8,000.Once Spotify and
+                                                                Apple Pays For Streams,The Payment Will
+                                                                Be Distributed To A Smart Contract Which
+                                                                Will Pay Out Shareholders.
+                                                        </p>
+                                                </div>
+                                                <div className="flex justify-center">
+                                                        <img src="../../last1.png" alt="last pic" />
+                                                </div>
+
+                                        </div>
+                                
+                                </div>
+                                
+                        </div>
+
+                        <div className="main-main4 text-center text-white mt-20">
+                                <div>
+                                        <h2 className="text-3xl font-bold tracking-wide">Our <span>Team</span></h2>
+                                        <p className="tracking-wide" >Our Highly Qualified And Skilled Team</p>
+                                </div>
+                                <br />
+                                <div className="main-main4-overflow">
+                                      
+                                        <div className="main-main4-contain">
+                                                
+                                                <div className="m-10">
+                                                        <div className="main-main4-div1"></div>
+                                                        <div className="main-main4-div2 m-10 ml-0"></div>
+                                                        <div className="main-main4-div3"></div>
+                                                </div>
+                                                <div className="m-10">
+                                                        <div className="main-main4-div1"></div>
+                                                        <div className="main-main4-div2 m-10 ml-0"></div>
+                                                        <div className="main-main4-div3"></div>
+                                                </div>
+                                                <div className="m-10">
+                                                        <div className="main-main4-div1"></div>
+                                                        <div className="main-main4-div2 m-10 ml-0"></div>
+                                                        <div className="main-main4-div3"></div>
+                                                </div>
+                                        </div>  
+                                </div>
+
+                        </div>
                 
                 </div>
         )
