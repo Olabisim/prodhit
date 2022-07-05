@@ -262,3 +262,16 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
 .main-main4-overflow::-webkit-scrollbar {
         display: none;
       }
+
+
+.footer {
+        background-color: #0B1329;
+}
+.footerin2 p, ul {
+        color: rgba(255, 255, 255, 0.7);
+}
+
+.bottom-footer {
+        background: linear-gradient(90deg, #0B1329 0%, #AE06F6 50.52%, rgba(177, 6, 249, 0) 95.31%);
+        padding: 20px 0 20px 0;
+}
