@@ -9,7 +9,7 @@ export const Footer = () => {
                                         <div className="footerin2 flex lg:justify-center m-5">
                                                 <div>
                                                         <h2 className="m-4 ml-0 font-bold text-xl" style={{display: 'flex'}}>
-                                                                <img src="../../Group.svg" alt="Tailwindcss Navigation" width="40px" className="mr-4" />
+                                                                <img src="../../Group.svg" alt="Tailwindcss Navigation" width="40px" className="mr-4 image-header" />
                                                                 PRODHIT
                                                         </h2>
                                                         <p className="mb-12 ml-0">
@@ -50,7 +50,7 @@ export const Footer = () => {
                         
                         </div>
 
-                        <div className="bottom-footer tracking-widest text-base lg:text-lg mt-16">
+                        <div className="bottom-footer tracking-wide lg:tracking-wider text-base lg:text-lg mt-16">
 
                                 <p className="text-center">© Copyright 2022 by Prodhit</p>
 

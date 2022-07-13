@@ -52,6 +52,7 @@ export const Main:React.FC = () => {
                         <div className="main-main2 text-white mt-20 text-center" >
                                 <div>
                                         <h2 className="font-bold text-3xl lg:text-4xl lg:tracking-wide">Musical Genres</h2>
+                                        <div className="under_musical"></div>
                                 </div>
                                 <div className="lg:mt-20 mt-10">
                                         <div className="ul-main">
@@ -124,9 +125,9 @@ export const Main:React.FC = () => {
                                                 </div>
 
                                                 <div className="justify-center w-full pr-10 items-center">
-                                                        <h2 className="text-4xl font-semibold ">What is <span>Prodhit? </span></h2>
+                                                        <h2 className="text-2xl lg:text-4xl font-semibold ">What is <span>Prodhit? </span></h2>
                                                         <br />
-                                                        <p className="text-xl tracking-wider leading-relaxed font-semibold">     Prodhit Is The Fastest Growing Music
+                                                        <p className="text-sm lg:text-xl tracking-wider leading-relaxed font-semibold">     Prodhit Is The Fastest Growing Music
                                                                 Platform Where You Can Buy Shares
                                                                 From Songs On Spotify And Also Submit 
                                                                 Your Song For Distribution And Earn.
@@ -135,9 +136,9 @@ export const Main:React.FC = () => {
                                         </div>
                                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center mt-36 m-12 second_grid_adjustment">
                                                 <div className="justify-center w-full pr-10 items-center">
-                                                        <h2 className="text-4xl font-semibold ">How it <span>Works </span></h2>
+                                                        <h2 className="text-2xl lg:text-4xl font-semibold ">How it <span>Works </span></h2>
                                                         <br />
-                                                        <p className="text-xl tracking-wider leading-relaxed font-semibold">     
+                                                        <p className="text-sm lg:text-xl tracking-wider leading-relaxed font-semibold">     
                                                                 It’s Easy.After Connecting Your Wallet
                                                                 And Buying Shares From Any Song By
                                                                 Clicking On “EXECUTE ORDER”,All Money

@@ -1,3 +1,5 @@
+
+
 .mobile-menu {
         left: -200%;
         transition: 0.5s;
@@ -55,6 +57,16 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
         letter-spacing: 0.035em;
 
         color: rgba(255, 255, 255, 0.7);
+        transition: 0.15s;
+
+}
+.nav-lisa:hover {
+
+        border-bottom: 3px solid #B106F9;
+        /* line-height: 2px; */
+        padding-bottom: 4px;
+        color: white;
+        transition: 0.15s;
 
 }
 
@@ -157,8 +169,13 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
         /* identical to box height */
 
         letter-spacing: 0.035em;
+        transition: 0.15s;
 }
+.main-main2 ul li a:hover {
+        background: linear-gradient(90deg, #3B39FB 0%, #B106F9 76.56%); 
+        letter-spacing: 2px;
 
+}
 
 .main-main2 ul li .active { 
         background: linear-gradient(90deg, #3B39FB 0%, #B106F9 76.56%);
@@ -192,7 +209,7 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
         margin: auto;
         display: flex;
         justify-content: center;
-        padding: 20px 40px 20px 40px;
+        padding: 20px 35px 20px 35px;
         line-height: 1.1em;
         box-shadow: 1px 2px 4px black;
         
@@ -260,6 +277,17 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
         display: none;
       }
 
+.under_musical {    
+
+        clip-path: polygon(100% 34%, 32% 65%, 0 31%, 0 25%, 32% 60%, 100% 30%);
+        background: linear-gradient(90.07deg, #4236FB -2.73%, #B106F9 90.5%);
+        width: 270.51px;
+        height: 48.24px;
+        margin: auto;
+
+
+}
+
 
 .footer {
         background-color: #0B1329;
@@ -283,6 +311,16 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
 
 
 
+.image-header {
+        width: 50px;
+}
+
+
+.submenu_link {
+        color: #011a39;
+
+}
+
 
 /* media queries */
 
@@ -290,8 +328,8 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
 @media screen and (max-width: 780px) {
         
         .main-main4-div1 {
-                width: 300px;
-                height: 270px;
+                width: 250px;
+                height: 230px;
         }
         .main-main4-div2 {
                 width: 218px;
@@ -327,4 +365,14 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
                 flex-direction: column-reverse;
         
         }
+        .image-header {
+                width: 40px;
+        }
+        
+        .under_musical {    
+
+                width: 208.51px;
+
+        }
+
 }

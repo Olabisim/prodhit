@@ -19,27 +19,27 @@ export const Nav:React.FC = () => {
                                 <div className="container mx-auto flex justify-between items-center">
                                         <div className='flex'>
 
-                                                <img src="../../Group.svg" alt="Tailwindcss Navigation" />
-                                                <h2 className='Navlogo text-white text-2xl font-semibold mt-2 p-4 pt-2 tracking-wide' > PRODHIT</h2>
+                                                <img src="../../Group.svg" alt="Tailwindcss Navigation" className='image-header' />
+                                                <h2 className='Navlogo text-white text-xl lg:text-2xl font-semibold mt-2 p-4 pt-2 tracking-wide' > PRODHIT</h2>
                                         </div>
 
                                         <ul className="hidden md:flex space-x-12">
-                                                <li><a href="#ss" className='nav-lisa active-nav-lisa' >Home</a></li>
-                                                <li><a href="#ss" className='nav-lisa' >About Us</a></li>
+                                                <li><a href="#ss" className='nav-lisa active-nav-lisa hover:tracking-widest' >Home</a></li>
+                                                <li><a href="#ss" className='nav-lisa hover:tracking-widest' >About Us</a></li>
                                                 <li className="flex relative group">
-                                                <a href="#ss" className="mr-1 nav-lisa" >Our Team</a> 
+                                                <a href="#ss" className="mr-1 nav-lisa hover:tracking-widest" >Our Team</a> 
                                                 <i className="fa-solid fa-chevron-down fa-2xs pt-3"></i>
                                                 {/* <!-- Submenu starts --> */}
                                                 <ul className="absolute bg-white p-3 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg">
-                                                        <li className="text-sm hover:bg-slate-100 leading-8"><a href="#ss">Webdesign</a></li>
-                                                        <li className="text-sm hover:bg-slate-100 leading-8"><a href="#ss">Digital marketing</a></li>
-                                                        <li className="text-sm hover:bg-slate-100 leading-8"><a href="#ss">SEO</a></li>
-                                                        <li className="text-sm hover:bg-slate-100 leading-8"><a href="#ss">Ad campaigns</a></li>
-                                                        <li className="text-sm hover:bg-slate-100 leading-8"><a href="#ss">UX Design</a></li>
+                                                        <li className="text-sm hover:bg-slate-100 leading-8 submenu_link p-4 hover:tracking-wider"><a href="#ss">Webdesign</a></li>
+                                                        <li className="text-sm hover:bg-slate-100 leading-8 submenu_link p-4 hover:tracking-wider"><a href="#ss">Digital marketing</a></li>
+                                                        <li className="text-sm hover:bg-slate-100 leading-8 submenu_link p-4 hover:tracking-wider"><a href="#ss">SEO</a></li>
+                                                        <li className="text-sm hover:bg-slate-100 leading-8 submenu_link p-4 hover:tracking-wider"><a href="#ss">Ad campaigns</a></li>
+                                                        <li className="text-sm hover:bg-slate-100 leading-8 submenu_link p-4 hover:tracking-wider"><a href="#ss">UX Design</a></li>
                                                 </ul>
                                                 {/* <!-- Submenu ends --> */}
                                                 </li>
-                                                <li><a href="#ss"  className='nav-lisa'>Blog</a></li>
+                                                <li><a href="#ss"  className='nav-lisa hover:tracking-widest'>Blog</a></li>
                                         </ul>
 
                                         
