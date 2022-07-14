@@ -91,7 +91,7 @@ export const Main:React.FC = () => {
                                                         </div>
                                                         <div className="main-content-box p-4 text-left ml-8 mr-8">
                                                                 
-                                                                <img src="../../Gen1.png" alt="fir" />
+                                                                <img src="../../chris3.png" alt="fir" />
                                                                 <h2 className="font-bold text-lg lg:text-2xl p-2 pl-0 tracking-wide lg:tracking-widest">No Guidance</h2>
                                                                 <p className="tracking-wide text-sm lg:text-lg font-bold mb-7">Chris Brown ft Drake <br />65% Available Stocks</p>
                                                                 <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
