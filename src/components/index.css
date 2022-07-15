@@ -183,7 +183,7 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
 }
 .main-content {
         display: flex;
-        width: 2000px;
+        /* width: 2000px; */
         overflow: auto;
         
 }

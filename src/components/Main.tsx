@@ -98,7 +98,7 @@ export const Main:React.FC = () => {
                                                                         Execute Order
                                                                 </button>
                                                         </div>
-                                                        <div className="main-content-box p-4 text-left ml-8 mr-8">
+                                                        {/* <div className="main-content-box p-4 text-left ml-8 mr-8">
                                                                 
                                                                 <img src="../../Gen2.png" alt="fir" />
                                                                 <h2 className="font-bold text-lg lg:text-2xl p-2 pl-0 tracking-wide lg:tracking-widest ">Are you a Music Artist ?</h2>
@@ -107,7 +107,7 @@ export const Main:React.FC = () => {
                                                                         <span className="text-2xl lg:text-4xl pr-4">+</span>
                                                                         Submit Music
                                                                 </button>
-                                                        </div>
+                                                        </div> */}
                                                 </div>
 
 
