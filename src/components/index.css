@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@400;500;600;700;800;900&family=Poller+One&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+body {
+        
+            font-family: 'Raleway', sans-serif;
+}
 
 .mobile-menu {
         left: -200%;
@@ -19,15 +24,15 @@
 
 .Nav-button {
         
-font-size: 20px;
+        font-size: 20px;
 
-background: linear-gradient(90deg, #2D3FFB 0%, #B106FA 70.83%);
-border-radius: 5px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-padding: 10px 40px;
-transition: 0.2s;
+        background: linear-gradient(90deg, #2D3FFB 0%, #B106FA 70.83%);
+        border-radius: 5px;
+        /* font-family: 'Poppins'; */
+        font-style: normal;
+        font-weight: 600;
+        padding: 10px 40px;
+        transition: 0.2s;
 }
 
 .Nav-button:hover {
@@ -47,7 +52,6 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
 
 .nav-lisa {
 
-        font-family: 'Poppins';
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
@@ -78,6 +82,7 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
 }
 .nav-header {
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        font-family: 'Raleway', sans-serif;
 }
 .main-main-in {
         /* height: 600px; */
@@ -86,6 +91,10 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
             background-size: 400% 400%; */
             display: flex;
             justify-content: space-around;
+            /* font-family: 'Anton', sans-serif; */
+            font-family: 'Cinzel', serif;
+            /* font-family: 'Poller One', cursive; */
+            /* font-family: 'Raleway', sans-serif; */
         
       }
 .main-main span {
@@ -160,8 +169,6 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
         padding: 15px 70px;
         margin: 10px 30px 10px 30px;
 
-        
-        font-family: 'Poppins';
         font-style: normal;
         font-weight: 600;
         font-size: 23px;
@@ -183,10 +190,15 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
 }
 .main-content {
         display: flex;
-        /* width: 2000px; */
+        width: 2000px;
         overflow: auto;
         
 }
+
+.main-content::-webkit-scrollbar {
+        display: none;
+      }
+
 .main-content-box {
         height: 550px;
         width: 400px;
@@ -327,6 +339,9 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
 
 @media screen and (max-width: 780px) {
         
+        .main-content {
+                width: 1000px;
+        }
         .main-main4-div1 {
                 width: 250px;
                 height: 230px;

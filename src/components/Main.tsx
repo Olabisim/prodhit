@@ -9,7 +9,7 @@ export const Main:React.FC = () => {
 
                                         <div className="text-white">
 
-                                                <h2 className="text-3xl lg:text-5xl pt-20 leading-relaxed lg:leading-snug font-semibold tracking-wide">
+                                                <h2 className="text-3xl lg:text-5xl pt-20 leading-relaxed lg:leading-snug font-semibold tracking-wide font-thin">
                                                         Become A <span>Shareholder</span> <br /> Of Your Favorite <br /> <span>Music</span>
 
                                                 </h2>
@@ -124,7 +124,7 @@ export const Main:React.FC = () => {
                                                         <img src="../../last2.png" alt="last pic" />
                                                 </div>
 
-                                                <div className="justify-center w-full pr-10 items-center">
+                                                <div className="justify-center w-full pr-10 pt-7 items-center">
                                                         <h2 className="text-2xl lg:text-4xl font-semibold ">What is <span>Prodhit? </span></h2>
                                                         <br />
                                                         <p className="text-sm lg:text-xl tracking-wider leading-relaxed font-semibold">     Prodhit Is The Fastest Growing Music
@@ -135,7 +135,7 @@ export const Main:React.FC = () => {
                                                 </div>
                                         </div>
                                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center mt-36 m-12 second_grid_adjustment">
-                                                <div className="justify-center w-full pr-10 items-center">
+                                                <div className="justify-center w-full pr-10 pt-7 items-center">
                                                         <h2 className="text-2xl lg:text-4xl font-semibold ">How it <span>Works </span></h2>
                                                         <br />
                                                         <p className="text-sm lg:text-xl tracking-wider leading-relaxed font-semibold">     
@@ -160,10 +160,10 @@ export const Main:React.FC = () => {
                                 
                         </div>
 
-                        <div className="main-main4 text-center text-white mt-20">
+                        <div className="main-main4 text-center text-white mt-28">
                                 <div>
-                                        <h2 className="text-3xl lg:text-4xl font-bold tracking-wide mb-5">Our <span>Team</span></h2>
-                                        <p className="tracking-wide text-base lg:text-xl font-bold" >Our Highly Qualified And Skilled Team</p>
+                                        <h2 className="text-3xl lg:text-4xl tracking-wide mb-5">Our <span>Team</span></h2>
+                                        <p className="tracking-wide text-base lg:text-xl" >Our Highly Qualified And Skilled Team</p>
                                 </div>
                                 <br />
                                 <div className="main-main4-overflow">
