@@ -14,7 +14,7 @@ export const Nav:React.FC = () => {
                 <>
 
                         <header className="h-20 nav-header mt-2 pt-0 p-10">
-                                <nav className="relative px-2 py-0">
+                                <nav className="relative px-0 lg:px-2 py-0">
                                 
                                 <div className="container mx-auto flex justify-between items-center">
                                         <div className='flex'>
