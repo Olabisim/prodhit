@@ -165,25 +165,24 @@ export const Main:React.FC = () => {
                                         <h2 className="text-3xl lg:text-4xl tracking-wide mb-5">Our <span>Team</span></h2>
                                         <p className="tracking-wide text-base lg:text-xl" >Our Highly Qualified And Skilled Team</p>
                                 </div>
-                                <br />
                                 <div className="main-main4-overflow">
                                       
                                         <div className="main-main4-contain">
                                                 
-                                                <div className="m-10">
-                                                        <div className="main-main4-div1"></div>
-                                                        <div className="main-main4-div2 m-10 ml-0"></div>
-                                                        <div className="main-main4-div3"></div>
+                                                <div className="m-10 loading">
+                                                        <div className="main-main4-div1 image"></div>
+                                                        <div className="main-main4-div2 loading m-10 ml-0"></div>
+                                                        {/* <div className="main-main4-div3"></div> */}
                                                 </div>
-                                                <div className="m-10">
-                                                        <div className="main-main4-div1"></div>
+                                                <div className="m-10 loading">
+                                                        <div className="main-main4-div1 image"></div>
                                                         <div className="main-main4-div2 m-10 ml-0"></div>
-                                                        <div className="main-main4-div3"></div>
+                                                        {/* <div className="main-main4-div3"></div> */}
                                                 </div>
-                                                <div className="m-10">
-                                                        <div className="main-main4-div1"></div>
+                                                <div className="m-10 loading">
+                                                        <div className="main-main4-div1 image"></div>
                                                         <div className="main-main4-div2 m-10 ml-0"></div>
-                                                        <div className="main-main4-div3"></div>
+                                                        {/* <div className="main-main4-div3"></div> */}
                                                 </div>
                                         </div>  
                                 </div>
