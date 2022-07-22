@@ -81,7 +81,7 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
         color: white;
 }
 .nav-header {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
         font-family: 'Raleway', sans-serif;
 }
 .main-main-in {
