@@ -20,7 +20,7 @@ export const Nav:React.FC = () => {
                                         <div className='flex'>
 
                                                 <img src="../../Group.svg" alt="Tailwindcss Navigation" className='image-header' />
-                                                <h2 className='Navlogo text-white text-xl lg:text-2xl font-semibold mt-2 p-4 pt-2 tracking-wide' > PRODHIT</h2>
+                                                <h2 className='Navlogo text-white text-xl lg:text-2xl font-thin mt-2 p-4 pt-2 tracking-wide' > PRODHIT</h2>
                                         </div>
 
                                         <ul className="hidden md:flex space-x-12">

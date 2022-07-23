@@ -9,7 +9,7 @@ export const Main:React.FC = () => {
 
                                         <div className="text-white">
 
-                                                <h2 className="text-3xl lg:text-5xl pt-20 leading-relaxed lg:leading-snug font-semibold tracking-wide font-thin">
+                                                <h2 className="text-3xl lg:text-4xl pt-20 leading-relaxed lg:leading-snug font-semibold tracking-wide font-thin">
                                                         Become A <span>Shareholder</span> <br /> Of Your Favorite <br /> <span>Music</span>
 
                                                 </h2>
@@ -51,10 +51,10 @@ export const Main:React.FC = () => {
 
                         <div className="main-main2 text-white mt-20 text-center" >
                                 <div>
-                                        <h2 className="font-bold text-3xl lg:text-4xl lg:tracking-wide">Musical Genres</h2>
+                                        <h2 className="font-normal text-3xl lg:text-4xl lg:tracking-wide">Musical Genres</h2>
                                         <div className="under_musical"></div>
                                 </div>
-                                <div className="lg:mt-20 mt-10">
+                                <div className="lg:mt-5 mt-5">
                                         <div className="ul-main">
                                                 <ul>
                                                         <li><a href="#jzz">Jazz</a></li>
@@ -66,14 +66,14 @@ export const Main:React.FC = () => {
                                                         <li><a href="#jzz">Funk</a></li>
                                                 </ul>
                                         </div>
-                                        <div className="ul-main">
+                                        <div className="ul-main mt-7">
 
                                                 <div className="main-content">
                                                         <div className="main-content-box p-4 text-left ml-8 mr-8">
                                                                 
                                                                 <img src="../../Gen1.png" alt="fir" />
-                                                                <h2 className="font-bold text-lg lg:text-2xl p-2 pl-0 tracking-wide lg:tracking-widest ">Are you a Music Artist ?</h2>
-                                                                <p className="tracking-wide text-sm lg:text-lg font-bold mb-7">You Can Submit Your Song <br />For Distribution</p>
+                                                                <h2 className="text-lg lg:text-2xl p-2 pl-0 tracking-wide lg:tracking-widest ">Are you a Music Artist ?</h2>
+                                                                <p className="tracking-wide text-sm lg:text-lg mb-7">You Can Submit Your Song <br />For Distribution</p>
                                                                 <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
                                                                         <span className="text-2xl lg:text-4xl pr-4">+</span>
                                                                         Submit Music
@@ -83,8 +83,8 @@ export const Main:React.FC = () => {
                                                         <div className="main-content-box p-4 text-left ml-8 mr-8">
                                                                 
                                                                 <img src="../../Gen2.png" alt="fir" />
-                                                                <h2 className="font-bold text-lg lg:text-2xl p-2 pl-0 tracking-wide lg:tracking-widest">The Box</h2>
-                                                                <p className="tracking-wide text-sm lg:text-lg font-bold mb-7">Roddy Ricch <br />85% Available Stocks </p>
+                                                                <h2 className="text-lg lg:text-2xl p-2 pl-0 tracking-wide lg:tracking-widest">The Box</h2>
+                                                                <p className="tracking-wide text-sm lg:text-lg mb-7">Roddy Ricch <br />85% Available Stocks </p>
                                                                 <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
                                                                         Execute Order
                                                                 </button>
@@ -92,8 +92,8 @@ export const Main:React.FC = () => {
                                                         <div className="main-content-box p-4 text-left ml-8 mr-8">
                                                                 
                                                                 <img src="../../chris3.png" alt="fir" />
-                                                                <h2 className="font-bold text-lg lg:text-2xl p-2 pl-0 tracking-wide lg:tracking-widest">No Guidance</h2>
-                                                                <p className="tracking-wide text-sm lg:text-lg font-bold mb-7">Chris Brown ft Drake <br />65% Available Stocks</p>
+                                                                <h2 className="text-lg lg:text-2xl p-2 pl-0 tracking-wide lg:tracking-widest">No Guidance</h2>
+                                                                <p className="tracking-wide text-sm lg:text-lg mb-7">Chris Brown ft Drake <br />65% Available Stocks</p>
                                                                 <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
                                                                         Execute Order
                                                                 </button>
