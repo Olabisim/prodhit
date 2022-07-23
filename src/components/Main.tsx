@@ -49,12 +49,12 @@ export const Main:React.FC = () => {
 
                         </div>
 
-                        <div className="main-main2 text-white mt-20 text-center" >
+                        <div className="main-main2 text-white mt-20 text-center mb-20" >
                                 <div>
                                         <h2 className="font-normal text-3xl lg:text-4xl lg:tracking-wide">Musical Genres</h2>
                                         <div className="under_musical"></div>
                                 </div>
-                                <div className="lg:mt-5 mt-5">
+                                <div className="">
                                         <div className="ul-main">
                                                 <ul>
                                                         <li><a href="#jzz">Jazz</a></li>
@@ -72,7 +72,7 @@ export const Main:React.FC = () => {
                                                         <div className="main-content-box p-4 text-left ml-8 mr-8">
                                                                 
                                                                 <img src="../../Gen1.png" alt="fir" />
-                                                                <h2 className="text-lg lg:text-2xl p-2 pl-0 tracking-wide lg:tracking-widest ">Are you a Music Artist ?</h2>
+                                                                <h2 className="text-lg lg:text-2xl p-2 pl-0 lg:tracking-widest ">Are you a Music Artist ?</h2>
                                                                 <p className="tracking-wide text-sm lg:text-lg mb-7">You Can Submit Your Song <br />For Distribution</p>
                                                                 <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
                                                                         <span className="text-2xl lg:text-4xl pr-4">+</span>
@@ -83,7 +83,7 @@ export const Main:React.FC = () => {
                                                         <div className="main-content-box p-4 text-left ml-8 mr-8">
                                                                 
                                                                 <img src="../../Gen2.png" alt="fir" />
-                                                                <h2 className="text-lg lg:text-2xl p-2 pl-0 tracking-wide lg:tracking-widest">The Box</h2>
+                                                                <h2 className="text-lg lg:text-2xl p-2 pl-0 lg:tracking-widest">The Box</h2>
                                                                 <p className="tracking-wide text-sm lg:text-lg mb-7">Roddy Ricch <br />85% Available Stocks </p>
                                                                 <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
                                                                         Execute Order
@@ -92,7 +92,7 @@ export const Main:React.FC = () => {
                                                         <div className="main-content-box p-4 text-left ml-8 mr-8">
                                                                 
                                                                 <img src="../../chris3.png" alt="fir" />
-                                                                <h2 className="text-lg lg:text-2xl p-2 pl-0 tracking-wide lg:tracking-widest">No Guidance</h2>
+                                                                <h2 className="text-lg lg:text-2xl p-2 pl-0 lg:tracking-widest">No Guidance</h2>
                                                                 <p className="tracking-wide text-sm lg:text-lg mb-7">Chris Brown ft Drake <br />65% Available Stocks</p>
                                                                 <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
                                                                         Execute Order
@@ -115,7 +115,7 @@ export const Main:React.FC = () => {
                                 </div>
                         </div>
 
-                        <div className="main-main3 text-white">
+                        <div className="main-main3 text-white p-1">
 
                                 <div className="container mx-auto">
                                                 
