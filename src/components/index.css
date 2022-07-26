@@ -359,6 +359,30 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
         color: #011a39;
 
 }
+.main_menu_bg {
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 18px;
+        font-weight: 100;
+        color: white;
+        letter-spacing: 3px;
+        line-height: 20px;
+        line-height: 5em;
+        margin-top: 20px;
+        padding-top: 20px;
+        text-transform: uppercase;
+}
+.main_menu_bg ul > li {
+        
+        line-height: 4em;
+}
+.main_menu_bg_li:hover {
+        
+        background: black;
+        font-size: 22px;
+}
+.main_menu_bg_li_inner:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+}
 
 
 /* left mobile nav */
@@ -368,6 +392,9 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
         width: 30px;
         margin-bottom: 7px;
         transition: 0.15s;
+}
+.mobile_nav_icon div:nth-of-type(2) {
+        width: 15px;
 }
 
 
