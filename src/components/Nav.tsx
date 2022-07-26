@@ -1,6 +1,7 @@
 
 import 'alpinejs'
 import './index.css'
+import { useRef, useState } from 'react'
 
 // const alpinetemplate:string = `
 // <button id="mobile-icon" className="md:hidden">
@@ -10,6 +11,28 @@ import './index.css'
 
 
 export const Nav:React.FC = () => {
+
+        const [toggle, setToggle] = useState<boolean>(false)
+
+        const li1 = useRef<any>(null)
+        const li2 = useRef<any>(null)
+        const li3 = useRef<any>(null)
+
+        const data:number = 45
+        const data2:number = 0
+        const data3:number = 18
+
+        const handleX = () => {
+                // li1.current.transform.rotate('23deg')
+                li1.current.style.transform = `rotate(${toggle ? data2 : data }deg)`
+                li2.current.style.opacity = `${toggle ? 1 : data2 }`
+                li3.current.style.transform = `rotate(-${toggle ? data2 : data}deg)`
+                li3.current.style.marginTop = `-${toggle ? data2 : data3}px`
+                setToggle(!toggle)
+                console.log(toggle)
+        }
+
+
         return (
                 <>
 
@@ -51,7 +74,11 @@ export const Nav:React.FC = () => {
                                         
                                         {/* <!-- Mobile menu icon --> */}
                                         {/* <div dangerouslySetInnerHTML={{__html: alpinetemplate}} ></ div> */}
-                                        
+                                                <div className='block md:hidden mobile_nav_icon p-5'>
+                                                        <div ref={li1} onClick={() => handleX()}></div>
+                                                        <div ref={li2}></div>
+                                                        <div ref={li3}></div>
+                                                </div>
                                         </div>
                                 
                                         {/* <!-- Mobile menu --> */}

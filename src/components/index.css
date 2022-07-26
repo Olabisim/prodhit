@@ -167,7 +167,7 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
 
 .main-main2 ul li a{
         /* background-color: rgba(39, 47, 176, 0.6); */
-        border: 1px solid rgba(255, 255, 255, .15);
+        border: 1px solid rgba(255, 255, 255, .1);
         padding: 15px 70px;
         margin: 10px 30px 10px 30px;
 
@@ -239,7 +239,7 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
 
 .main-main3 {
         /* height: 600px; */
-        background-color: rgba(39, 47, 176, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
         /* padding: 10px; */
 }
 .main-main3 p {
@@ -359,6 +359,20 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
         color: #011a39;
 
 }
+
+
+/* left mobile nav */
+.mobile_nav_icon div {
+        height: 2px;
+        background-color: white;
+        width: 30px;
+        margin-bottom: 7px;
+        transition: 0.21s;
+}
+
+
+
+
 
 
 /* media queries */
