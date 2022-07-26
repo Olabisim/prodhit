@@ -363,11 +363,11 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
 
 /* left mobile nav */
 .mobile_nav_icon div {
-        height: 2px;
+        height: 1px;
         background-color: white;
         width: 30px;
         margin-bottom: 7px;
-        transition: 0.21s;
+        transition: 0.15s;
 }
 
 

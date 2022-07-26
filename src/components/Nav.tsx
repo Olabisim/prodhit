@@ -74,8 +74,8 @@ export const Nav:React.FC = () => {
                                         
                                         {/* <!-- Mobile menu icon --> */}
                                         {/* <div dangerouslySetInnerHTML={{__html: alpinetemplate}} ></ div> */}
-                                                <div className='block md:hidden mobile_nav_icon p-5'>
-                                                        <div ref={li1} onClick={() => handleX()}></div>
+                                                <div className='block md:hidden mobile_nav_icon p-3' onClick={() => handleX()}>
+                                                        <div ref={li1} ></div>
                                                         <div ref={li2}></div>
                                                         <div ref={li3}></div>
                                                 </div>
