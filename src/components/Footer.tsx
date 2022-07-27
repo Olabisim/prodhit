@@ -26,9 +26,9 @@ export const Footer = () => {
                                                                 SOCIALS
                                                         </h2>
                                                         <ul className="mb-3 ml-0">
-                                                                <li>Facebook</li>
-                                                                <li>Twitter</li>
-                                                                <li>Instagram</li>
+                                                                <li> <a href="#footerfacebook">Facebook</a></li>
+                                                                <li><a href="#footertwiiter">Twitter</a></li>
+                                                                <li><a href="#footerinstagram">Instagram</a></li>
                                                         </ul>
 
                                                 </div>
@@ -40,9 +40,9 @@ export const Footer = () => {
                                                                 HELP
                                                         </h2>
                                                         <ul className="mb-3 ml-0">
-                                                                <li>Support</li>
-                                                                <li>Terms & Conditions</li>
-                                                                <li>Privacy Policy</li>
+                                                                <li><a href="#footersupport">Support</a></li>
+                                                                <li><a href="#footerterms">Terms & Conditions</a></li>
+                                                                <li><a href="#footerprivacy">Privacy Policy</a></li>
                                                         </ul>
                                                 </div>
                                         </div>
@@ -50,7 +50,7 @@ export const Footer = () => {
                         
                         </div>
 
-                        <div className="bottom-footer tracking-wide lg:tracking-wider text-base lg:text-lg mt-16">
+                        <div className="bottom-footer tracking-wide lg:tracking-wider text-sm lg:text-lg mt-16">
 
                                 <p className="text-center">© Copyright 2022 by Prodhit</p>
 
