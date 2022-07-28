@@ -421,6 +421,14 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
 }
 
 
+.adjust_margintop_about_section {
+                
+        margin-top: 0px;
+}
+.adjust_margintop_about_section2 {
+                
+        margin-top: 0px;
+}
 
 
 
@@ -490,6 +498,14 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
         .main_header_content {
                 margin-top: -120px;
         
+        }
+        .adjust_margintop_about_section {
+                
+                margin-top: -150px;
+        }
+        .adjust_margintop_about_section2 {
+                
+                margin-top: -250px;
         }
 
 }
