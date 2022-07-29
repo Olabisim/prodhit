@@ -1,6 +1,24 @@
 import {FirstMainSvg, SecondMainSvg, LandingPageSvg} from '../components/svg/BodySvgs'
 import '../starbackground.css'
 
+
+interface cardArrayTypes {
+        image: string,
+        h2: string,
+        p: any,
+        submit: string,
+        plus: boolean
+}
+
+
+const cardArray:cardArrayTypes[] = [
+        { image: 'https://images.unsplash.com/photo-1550565118-3a14e8d0386f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vbmV5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60', h2: 'Are you a Music Artist ?', p: <>You Can Submit Your Song <br />For Distribution</>, submit: 'Submit Music', plus: true },
+        { image: 'https://images.unsplash.com/photo-1561414927-6d86591d0c4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uZXl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60', h2: 'The Box', p: <>Roddy Ricch <br />85% Available Stocks</>, submit: 'Execute Order', plus: false },
+        { image: 'https://images.unsplash.com/photo-1550565118-3a14e8d0386f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vbmV5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60', h2: 'No Guidance', p: <>Chris Brown ft Drake <br />65% Available Stocks</>, submit: 'Execute Order', plus: false },
+        { image: 'https://images.unsplash.com/photo-1561414927-6d86591d0c4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uZXl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60', h2: 'Are you a Music Artist ?', p: <>You Can Submit Your Song <br />For Distribution</>, submit: 'Submit Music', plus: true }
+]
+
+
 export const Main:React.FC = () => {
         return (
                 <div>
@@ -30,24 +48,6 @@ export const Main:React.FC = () => {
 
                                                 <LandingPageSvg />
 
-                                                        {/* <div className="w-1/2 m-3 mr-0 nav-landingside-1">
-                                                                <img src="../../Rectangle-1.png" alt="first pic" width='300px' />
-                                                        </div>
-                                                        <div className="w-1/2 m-3 nav-landingside-2">
-                                                                <img src="../../Rectangle-2.png" alt="first pic" width='300px' />
-
-                                                        </div>
-
-                                                </div>  
-                                                <div className="flex">
-
-                                                        <div className="w-1/2 m-3 mr-0 nav-landingside-3">
-                                                                <img src="../../Rectangle-3.png" alt="first pic" width='300px' />
-                                                        </div>
-                                                        <div className="w-1/2 m-3 nav-landingside-4">
-                                                                <img src="../../Rectangle-4.png" alt="first pic" width='300px' />
-
-                                                        </div> */}
 
                                                 </div>
 
@@ -77,45 +77,21 @@ export const Main:React.FC = () => {
                                         <div className="ul-main mt-10 lg:mt-14">
 
                                                 <div className="main-content">
-                                                        <div className="main-content-box p-4 text-left ml-8 mr-8">
-                                                                
-                                                                <img src="https://images.unsplash.com/photo-1550565118-3a14e8d0386f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vbmV5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="fir" />
-                                                                <h2 className="text-lg lg:text-2xl p-2 pl-0 lg:tracking-wide ">Are you a Music Artist ?</h2>
-                                                                <p className="tracking-wide text-sm lg:text-lg mb-7">You Can Submit Your Song <br />For Distribution</p>
-                                                                <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
-                                                                        <span className="text-2xl lg:text-4xl pr-4">+</span>
-                                                                        Submit Music
-                                                                </button>
-                                                        </div>
-
-                                                        <div className="main-content-box p-4 text-left ml-8 mr-8">
-                                                                
-                                                                <img src="https://images.unsplash.com/photo-1561414927-6d86591d0c4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uZXl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="fir" />
-                                                                <h2 className="text-lg lg:text-2xl p-2 pl-0 lg:tracking-widest">The Box</h2>
-                                                                <p className="tracking-wide text-sm lg:text-lg mb-7">Roddy Ricch <br />85% Available Stocks </p>
-                                                                <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
-                                                                        Execute Order
-                                                                </button>
-                                                        </div>
-                                                        <div className="main-content-box p-4 text-left ml-8 mr-8">
-                                                                
-                                                                <img src="https://images.unsplash.com/photo-1550565118-3a14e8d0386f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vbmV5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="fir" />
-                                                                <h2 className="text-lg lg:text-2xl p-2 pl-0 lg:tracking-widest">No Guidance</h2>
-                                                                <p className="tracking-wide text-sm lg:text-lg mb-7">Chris Brown ft Drake <br />65% Available Stocks</p>
-                                                                <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
-                                                                        Execute Order
-                                                                </button>
-                                                        </div>
-                                                        <div className="main-content-box p-4 text-left ml-8 mr-8">
-                                                                
-                                                                <img src="https://images.unsplash.com/photo-1561414927-6d86591d0c4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uZXl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="fir" />
-                                                                <h2 className="text-lg lg:text-2xl p-2 pl-0 lg:tracking-widest">Are you a Music Artist ?</h2>
-                                                                <p className="tracking-wide text-sm lg:text-lg font-bold mb-7">You Can Submit Your Song <br />For Distribution</p>
-                                                                <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
-                                                                        <span className="text-2xl lg:text-4xl pr-4">+</span>
-                                                                        Submit Music
-                                                                </button>
-                                                        </div>
+                                                        {
+                                                                cardArray.map((e, i) => 
+                                                                        (
+                                                                                <div className="main-content-box p-4 text-left ml-8 mr-8" key={i}>      
+                                                                                        <img src={`${e.image}`} alt="fir" />
+                                                                                        <h2 className="text-lg lg:text-2xl p-2 pl-0 lg:tracking-wide ">{e.h2}</h2>
+                                                                                        <p className="tracking-wide text-sm lg:text-lg mb-7">{e.p}</p>
+                                                                                        <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
+                                                                                                {e.plus && <span className="text-2xl lg:text-4xl pr-4">+</span>}
+                                                                                                {e.submit}
+                                                                                        </button>
+                                                                                </div>
+                                                                        )  
+                                                                )
+                                                        }
                                                 </div>
 
 
@@ -181,17 +157,14 @@ export const Main:React.FC = () => {
                                                 <div className="m-10 loading">
                                                         <div className="main-main4-div1 image"></div>
                                                         <div className="main-main4-div2 loading m-10 ml-0"></div>
-                                                        {/* <div className="main-main4-div3"></div> */}
                                                 </div>
                                                 <div className="m-10 loading">
                                                         <div className="main-main4-div1 image"></div>
                                                         <div className="main-main4-div2 m-10 ml-0"></div>
-                                                        {/* <div className="main-main4-div3"></div> */}
                                                 </div>
                                                 <div className="m-10 loading">
                                                         <div className="main-main4-div1 image"></div>
                                                         <div className="main-main4-div2 m-10 ml-0"></div>
-                                                        {/* <div className="main-main4-div3"></div> */}
                                                 </div>
                                         </div>  
                                 </div>
