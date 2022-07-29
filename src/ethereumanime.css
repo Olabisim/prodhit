@@ -1,0 +1,115 @@
+
+#sezam-loader .st0{
+        stroke:#828cfc;
+}
+#sezam-loader .st1{
+        stroke: #505efb;
+}
+#sezam-loader .st2{
+        stroke:#2D3FFB;
+}
+#sezam-loader .st3{
+        stroke: #0412af;
+}
+
+#sezam-loader .st0,
+#sezam-loader .st1,
+#sezam-loader .st2,
+#sezam-loader .st3 
+{
+-webkit-animation: draw 6000ms ease-in-out infinite; /* Safari 4+ */
+-moz-animation:    draw 6000ms ease-in-out infinite; /* Fx 5+ */
+-o-animation:      draw 6000ms ease-in-out infinite; /* Opera 12+ */
+animation:         draw 6000ms ease-in-out infinite;
+/* stroke: #828cfc; */
+/* stroke-width: 1; */
+}
+
+@-webkit-keyframes draw {
+0% {
+        stroke-dasharray: 0 100;
+        stroke-dashoffset: 200;
+        fill-opacity: 0;
+        stroke-width: 1;
+}
+37% {
+        stroke-dasharray: 600 0;
+        stroke-dashoffset: 200;
+        fill-opacity: 0;
+        stroke-width: 1;
+}
+50% {
+        fill-opacity: 1;
+        stroke-width: 0;
+}
+100% {
+        fill-opacity: 1;
+        stroke-width: 0;
+}
+}
+@-moz-keyframes draw {
+0% {
+        stroke-dasharray: 0 100;
+        stroke-dashoffset: 200;
+        fill-opacity: 0;
+        stroke-width: 1;
+}
+37% {
+        stroke-dasharray: 600 0;
+        stroke-dashoffset: 200;
+        fill-opacity: 0;
+        stroke-width: 1;
+}
+50% {
+        fill-opacity: 1;
+        stroke-width: 0;
+}
+100% {
+        fill-opacity: 1;
+        stroke-width: 0;
+}
+}
+@-o-keyframes draw {
+0% {
+        stroke-dasharray: 0 100;
+        stroke-dashoffset: 200;
+        fill-opacity: 0;
+        stroke-width: 1;
+}
+37% {
+        stroke-dasharray: 600 0;
+        stroke-dashoffset: 200;
+        fill-opacity: 0;
+        stroke-width: 1;
+}
+50% {
+        fill-opacity: 1;
+        stroke-width: 0;
+}
+100% {
+        fill-opacity: 1;
+        stroke-width: 0;
+}
+}
+@keyframes draw {
+0% {
+        stroke-dasharray: 0 100;
+        stroke-dashoffset: 200;
+        fill-opacity: 0;
+        stroke-width: 1;
+}
+37% {
+        stroke-dasharray: 600 0;
+        stroke-dashoffset: 200;
+        fill-opacity: 0;
+        stroke-width: 1;
+}
+50% {
+        fill-opacity: 1;
+        stroke-width: 0;
+}
+100% {
+        fill-opacity: 1;
+        stroke-width: 0;
+}
+}
