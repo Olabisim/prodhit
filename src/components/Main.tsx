@@ -1,10 +1,14 @@
 import {FirstMainSvg, SecondMainSvg, LandingPageSvg} from '../components/svg/BodySvgs'
-
+import '../starbackground.css'
 
 export const Main:React.FC = () => {
         return (
                 <div>
                         
+                        <div className='stars'></div>
+                        <div className='stars'></div>
+                        {/* <div id='stars2'></div> */}
+                        {/* <div id='stars3'></div> */}
                         <div className="main-main p-10 pb-0 pt-0 lg:pt-10">
 
                                 <div className="main-main-in">

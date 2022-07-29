@@ -1,9 +1,9 @@
-
+import '../../svganimations.css'
 
 export const LandingPageSvg = () => {
         return (
                 <>
-                      <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="813.61811" height="712.2585" viewBox="0 0 813.61811 712.2585" xmlnsXlink="http://www.w3.org/1999/xlink">        
+                      <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="813.61811" height="712.2585" viewBox="0 0 813.61811 712.2585" xmlnsXlink="http://www.w3.org/1999/xlink" className='balloon'>        
                                 <polygon points="501.384 26 461.414 91.898 501.298 115.501 501.384 26" fill="#828cfc"/>
                                 <polygon points="461.549 92.033 501.298 73.916 501.249 115.529 461.549 92.033" fill="#505efb"/>
                                 <polygon points="501.211 26 541.182 91.898 501.298 115.501 501.211 26" fill="#2D3FFB"/>

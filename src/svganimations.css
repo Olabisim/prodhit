@@ -1,0 +1,9 @@
+
+.balloon {
+  animation:balloon 4s ease-in-out infinite;
+}
+@keyframes balloon {
+  0%,100%{ transform:translateY(0) rotate(-4deg); }
+  50%{ transform:translateY(-25px) rotate(4deg); }
+}
+      
