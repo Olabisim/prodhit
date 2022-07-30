@@ -2,6 +2,7 @@
 import 'alpinejs'
 import './index.css'
 import { useRef, useState } from 'react'
+import {Loader} from './Loader'
 
 // const alpinetemplate:string = `
 // <button id="mobile-icon" className="md:hidden">
@@ -13,6 +14,7 @@ import { useRef, useState } from 'react'
 export const Nav:React.FC = () => {
 
         const [toggle, setToggle] = useState<boolean>(false)
+        const [ loading, setLoading ] = useState<boolean>(false)
 
         const li1 = useRef<any>(null)
         const li2 = useRef<any>(null)
@@ -34,6 +36,11 @@ export const Nav:React.FC = () => {
                 setToggle(!toggle)
         }
 
+        const handleConnect = () => {
+                setLoading(true)
+                setTimeout(() => setLoading(false), 2000)
+                console.log('clicked')
+        }
 
         return (
                 <>
@@ -69,7 +76,15 @@ export const Nav:React.FC = () => {
 
                                         
                                         <div className='hidden md:flex'>
-                                                <a href="#ss" className="Nav-button text-white m-2" role="button">Connect Wallet</a>
+                                                <a href="#ss" className="Nav-button text-white m-2" role="button" onClick={() => handleConnect()}>
+                                                        {
+                                                                loading
+                                                                ?
+                                                                <Loader />
+                                                                :
+                                                                'Connect Wallet'
+                                                        }
+                                                </a>
                                                 <img src="../../avatar.png " className="Nav-avatar mt-3" alt="Tailwindcss Navigation" />
 
                                         </div>
@@ -88,10 +103,10 @@ export const Nav:React.FC = () => {
                                                 <div id="mobile-menu" className="mobile-menu absolute top-23 w-full" ref={mobileMenu}> 
                                                         {/* <!-- add hidden here later --> */}
                                                         <ul className="main_menu_bg shadow-lg leading-9 font-bold h-screen">
-                                                                <li className="pl-4 main_menu_bg_li "><a href="hssttps://google.com" className="block pl-10">Home</a></li>
-                                                                <li className="pl-4 main_menu_bg_li "><a href="#ss" className="block pl-10">News</a></li>
+                                                                <li className="pl-4 main_menu_bg_li "><a href="#home" className="block pl-10">Home</a></li>
+                                                                <li className="pl-4 main_menu_bg_li "><a href="#news" className="block pl-10">News</a></li>
                                                                 <li className="main_menu_bg_li">
-                                                                <a href="#ss" className="block pl-14">Services <i className="fa-solid fa-chevron-down fa-2xs pt-4"></i></a> 
+                                                                <a href="#services" className="block pl-14">Services <i className="fa-solid fa-chevron-down fa-2xs pt-4"></i></a> 
                                                                 
                                                                 {/* <!-- Submenu starts --> */}
                                                                 <ul className="bg-white text-gray-800 w-full">
@@ -103,8 +118,8 @@ export const Nav:React.FC = () => {
                                                                 </ul>
                                                                 {/* <!-- Submenu ends --> */}
                                                                 </li>
-                                                                <li className="pl-4 main_menu_bg_li "><a href="#ss" className="block pl-10">About</a></li>
-                                                                <li className="pl-4 main_menu_bg_li "><a href="#ss" className="block pl-10">Contact</a></li>
+                                                                <li className="pl-4 main_menu_bg_li "><a href="#about" className="block pl-10">About</a></li>
+                                                                <li className="pl-4 main_menu_bg_li "><a href="#contact" className="block pl-10">Contact</a></li>
                                                         </ul>
                                                 </div>
                                         </div>

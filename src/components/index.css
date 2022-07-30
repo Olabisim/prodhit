@@ -8,6 +8,7 @@ body {
 .mobile-menu {
         left: -200%;
         transition: 0.5s;
+        z-index: 1;
       }
       
       .mobile-menu.active {
@@ -31,8 +32,9 @@ body {
         /* font-family: 'Poppins'; */
         font-style: normal;
         /* font-weight: 600; */
-        padding: 10px 40px;
+        padding: 8px 40px;
         transition: 0.2s;
+        display: inline-flex;
 }
 
 .Nav-button:hover {
@@ -106,6 +108,7 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
         background-clip: text;
         -webkit-background-clip: text;
         font-weight: 900;
+        font-size: 2.5em;
 }
 .heading_main_text span {
         /* color: #2D3FFB; */
@@ -154,7 +157,7 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
         border-bottom-right-radius: 150px 150px;
 }
 .main-main .Nav-button {
-        padding: 15px 40px;
+        padding: 13px 40px;
         margin-top: 30px;
 }
 .header_svg_container {
@@ -542,5 +545,9 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
                 
                 margin-top: -250px;
         }
-
+        
+        .heading_main_text {
+                
+                font-size: 1.8em;
+        }
 }

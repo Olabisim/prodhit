@@ -1,6 +1,17 @@
 
+import { useState } from 'react'
+import { Loader } from './Loader'
 
 export const Footer = () => {
+        
+        const [ loading, setLoading ] = useState<boolean>(false)
+        
+        const handleX = () => {
+                setLoading(true)
+                setTimeout(() => setLoading(false), 2000)
+                console.log('clicked')
+        }
+
         return (
                 <div className="footer text-white mt-20 pt-5">
                         <div className="container">
@@ -16,7 +27,15 @@ export const Footer = () => {
                                                                 Enabling You Become A Shareholder <br />
                                                                 Of Musics From Spotify.
                                                         </p>
-                                                        <a href="#ss" className="Nav-button text-white mt-3" role="button" style={{padding: '15px 40px !important', marginTop: '30px'}} >Connect Wallet</a>
+                                                        <a href="#connect" className="Nav-button text-white mt-3" role="button" style={{padding: '15px 40px !important', marginTop: '25px'}} onClick={() => handleX()} >
+                                                                {
+                                                                        loading
+                                                                        ?
+                                                                        <Loader />
+                                                                        :
+                                                                        'Connect Wallet'
+                                                                }
+                                                        </a>
 
                                                 </div>
                                         </div>

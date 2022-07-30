@@ -1,6 +1,7 @@
 import {FirstMainSvg, SecondMainSvg, LandingPageSvg} from '../components/svg/BodySvgs'
 import '../starbackground.css'
-
+import { Loader } from './Loader'
+import { useState } from 'react'
 
 interface cardArrayTypes {
         image: string,
@@ -20,6 +21,15 @@ const cardArray:cardArrayTypes[] = [
 
 
 export const Main:React.FC = () => {
+
+        const [ loading, setLoading ] = useState<boolean>(false)
+        
+        const handleX = () => {
+                setLoading(true)
+                setTimeout(() => setLoading(false), 2000)
+                console.log('clicked')
+        }
+
         return (
                 <div>
                         
@@ -33,21 +43,28 @@ export const Main:React.FC = () => {
 
                                         <div className="text-white main_header_content">
 
-                                                <h2 className="text-3xl lg:text-5xl md:pt-20 leading-relaxed lg:leading-snug font-semibold tracking-wide font-extra-bold heading_main_text">
+                                                <h2 className="text-3xl lg:text-4xl md:pt-20 leading-relaxed lg:leading-snug font-semibold tracking-wide font-extra-bold heading_main_text">
                                                         Become A <span>Shareholder</span> <br /> Of Your Favorite <br /> <span>Music</span>
 
                                                 </h2>
                                                 <p className="tracking-widest font-semibold mt-5 mb-5 lg:text-lg shade-white pb-10"> 
                                                         Enabling You Become A Shareholder <br /> Of Musics From Spotify.
                                                 </p>
-                                                <a href="#ss" className="Nav-button text-white mt-3" role="button" style={{padding: '15px 40px !important', marginTop: '30px'}} >Connect Wallet</a>
+                                                <a href="#connect" className="Nav-button text-white mt-3" role="button" style={{padding: '15px 40px !important', marginTop: '30px'}} onClick={() => handleX()} >
+                                                        {
+                                                                loading
+                                                                ?
+                                                                <Loader />
+                                                                :
+                                                                'Connect Wallet'
+                                                        }
+                                                </a>
 
                                         </div>
                                         <div className="">
                                                 <div className="header_svg_container">
 
-                                                <LandingPageSvg />
-
+                                                        <LandingPageSvg />
 
                                                 </div>
 
@@ -56,7 +73,6 @@ export const Main:React.FC = () => {
                                 </div>
 
                         </div>
-
                         <div className="main-main2 text-white text-center mt-32 lg:mt-0 mb-32" >
                                 <div>
                                         <h2 className="font-normal text-3xl lg:text-4xl lg:tracking-wide">Musical Genres</h2>
