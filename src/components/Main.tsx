@@ -34,7 +34,7 @@ export const Main:React.FC = () => {
                 <div>
                         
                         <div className='stars'></div>
-                        {/* <div className='stars'></div> */}
+                        <div className='stars2'></div>
                         <div id='stars2'></div>
                         <div id='stars3'></div>
                         <div className="main-main p-10 pb-0 pt-0 lg:pt-10">
