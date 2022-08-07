@@ -1,5 +1,5 @@
-import '../../svganimations.css'
-import '../../ethereumanime.css'
+import '../../css/svganimations.css'
+import '../../css/ethereumanime.css'
 
 
 export const LandingPageSvg = () => {

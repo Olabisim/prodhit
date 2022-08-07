@@ -1,7 +1,8 @@
 import {FirstMainSvg, SecondMainSvg, LandingPageSvg} from '../components/svg/BodySvgs'
-import '../starbackground.css'
+import '../css/starbackground.css'
 import { Loader } from './Loader'
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
+import '../css/slideanimation.css'
 
 interface cardArrayTypes {
         image: string,
@@ -23,6 +24,9 @@ const cardArray:cardArrayTypes[] = [
 export const Main:React.FC = () => {
 
         const [ loading, setLoading ] = useState<boolean>(false)
+        const [ reveal, setreveal ] = useState<boolean>(false)
+
+        const landingpageText = useRef<any>(null)
         
         const handleX = () => {
                 setLoading(true)
@@ -30,18 +34,32 @@ export const Main:React.FC = () => {
                 console.log('clicked')
         }
 
+        const myScrollFunc = function () {
+                let y = window.scrollY;
+                console.log(y)
+                if (y >= 250) {
+                        setreveal(true)
+                }
+                else {
+                        setreveal(false)
+                }
+        }
+
+        useEffect(() => {
+                window.addEventListener("scroll", myScrollFunc)
+        }, [])
+
         return (
                 <div>
                         
-                        <div className='stars'></div>
+                        {/* <div className='stars'></div> */}
                         <div className='stars2'></div>
                         <div id='stars2'></div>
                         <div id='stars3'></div>
                         <div className="main-main p-10 pb-0 pt-0 lg:pt-10">
 
                                 <div className="main-main-in">
-
-                                        <div className="text-white main_header_content">
+                                        <div className="text-white main_header_content" ref={landingpageText}>
 
                                                 <h2 className="text-3xl lg:text-4xl md:pt-20 leading-relaxed lg:leading-snug font-semibold tracking-wide font-extra-bold heading_main_text">
                                                         Become A <span>Shareholder</span> <br /> Of Your Favorite <br /> <span>Music</span>
@@ -74,10 +92,17 @@ export const Main:React.FC = () => {
 
                         </div>
                         <div className="main-main2 text-white text-center mt-32 lg:mt-0 mb-32" >
+                                
+                        {/* {
+
+                                reveal
+                                        &&
+                                         */}
                                 <div>
-                                        <h2 className="font-normal text-3xl lg:text-4xl lg:tracking-wide">Musical Genres</h2>
+                                        <h2 className={`font-normal text-3xl lg:text-4xl lg:tracking-wide  ${reveal ? 'visibility_false slideDown' : 'visibility_true '}`}>Musical Genres</h2>
                                         <div className="under_musical"></div>
                                 </div>
+                        {/* } */}
                                 <div className="mt-4 lg:mt-7">
                                         <div className="ul-main">
                                                 <ul>

@@ -1,6 +1,6 @@
 
 import 'alpinejs'
-import './index.css'
+import '../css/index.css'
 import { useRef, useState } from 'react'
 import {Loader} from './Loader'
 

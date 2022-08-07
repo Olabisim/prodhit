@@ -386,6 +386,12 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
 
 
 }
+.visibility_true {
+        visibility: hidden;
+}
+.visibility_false {
+        visibility: visible;
+}
 
 
 .footer {
