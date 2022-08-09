@@ -26,6 +26,11 @@ export const Main:React.FC = () => {
         const [ loading, setLoading ] = useState<boolean>(false)
         const [ musicalHead, setmusicalHead ] = useState<boolean>(false)
         const [ musicalSub, setmusicalSub ] = useState<boolean>(false)
+        const [ musicalSubContent, setmusicalSubContent ] = useState<boolean>(false)
+        const [ aboutPart1, setaboutPart1 ] = useState<boolean>(false)
+        const [ aboutPart2, setaboutPart2 ] = useState<boolean>(false)
+        const [ teamPart, setteamPart ] = useState<boolean>(false)
+        const [ teamPart2, setteamPart2 ] = useState<boolean>(false)
 
         const landingpageText = useRef<any>(null)
         
@@ -41,7 +46,17 @@ export const Main:React.FC = () => {
 
                 y >= 260 ? setmusicalHead(true) : setmusicalHead(false)
                 
-                y >=320 ? setmusicalSub(true) : setmusicalSub(false)
+                y >= 320 ? setmusicalSub(true) : setmusicalSub(false)
+
+                y >= 500 ? setmusicalSubContent(true) : setmusicalSubContent(false)
+
+                y >= 1550 ? setaboutPart1(true) : setaboutPart1(false) 
+
+                y >= 2150 ? setaboutPart2(true) : setaboutPart2(false) 
+
+                y >= 2850 ? setteamPart(true) : setteamPart(false) 
+
+                y >= 2950 ? setteamPart2(true) : setteamPart2(false) 
                 
         }
 
@@ -63,13 +78,13 @@ export const Main:React.FC = () => {
                                 </div>
                                                         
                                 <div className="main-main-in">
-                                        <div className="text-white main_header_content" ref={landingpageText}>
+                                        <div className="text-white main_header_content bounceIn" ref={landingpageText}>
 
-                                                <h2 className="text-3xl lg:text-4xl md:pt-20 leading-relaxed lg:leading-snug font-semibold tracking-wide font-extra-bold heading_main_text">
+                                                <h2 className="text-3xl lg:text-4xl md:pt-20 leading-relaxed lg:leading-snug font-semibold tracking-wide font-extra-bold heading_main_text animate-in">
                                                         Become A <span>Shareholder</span> <br /> Of Your Favorite <br /> <span>Music</span>
 
                                                 </h2>
-                                                <p className="tracking-widest font-semibold mt-5 mb-5 lg:text-lg shade-white pb-10"> 
+                                                <p className="tracking-widest font-semibold mt-5 mb-5 lg:text-lg shade-white pb-10 "> 
                                                         Enabling You Become A Shareholder <br /> Of Musics From Spotify.
                                                 </p>
                                                 <a href="#connect" className="Nav-button text-white mt-3" role="button" style={{padding: '15px 40px !important', marginTop: '30px'}} onClick={() => handleX()} >
@@ -84,7 +99,7 @@ export const Main:React.FC = () => {
 
                                         </div>
                                         <div className="mt-6">
-                                                <div className="header_svg_container">
+                                                <div className="header_svg_container slideLeftToRight">
 
                                                         <LandingPageSvg />
 
@@ -121,7 +136,7 @@ export const Main:React.FC = () => {
                                         </div>
                                         <div className="ul-main mt-10 lg:mt-14">
 
-                                                <div className="main-content">
+                                                <div className={`main-content ${musicalSubContent ? 'visibility_false slideDown' : 'visibility_true '}`}>
                                                         {
                                                                 cardArray.map((e, i) => 
                                                                         (
@@ -148,13 +163,13 @@ export const Main:React.FC = () => {
 
                                 <div className="container mx-auto">
                                                 
-                                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center m-5 mt-0">
-                                                <div className="flex justify-center">
+                                        <div className={`grid grid-cols-1 lg:grid-cols-2 gap-6 items-center m-5 mt-0 ${aboutPart1 ? 'visibility_false slideLeftToRight' : 'visibility_true '}`}>
+                                                <div className={`flex justify-center`}>
                                                         {/* <img src="../../crypto_portfolio_2jy5.svg" alt="last pic" /> */}
                                                         <FirstMainSvg />
                                                 </div>
 
-                                                <div className="justify-center w-full md:pr-24 md:pt-7 items-center text-center md:text-left adjust_margintop_about_section">
+                                                <div className={`justify-center w-full md:pr-24 md:pt-7 items-center text-center md:text-left adjust_margintop_about_section`}>
                                                         <h2 className="text-2xl lg:text-4xl font-normal ">What is <span>Prodhit? </span></h2>
                                                         <br />
                                                         <p className="text-sm lg:text-xl tracking-wider leading-relaxed font-normal p-10 md:p-0">     Prodhit Is The Fastest Growing Music
@@ -164,7 +179,7 @@ export const Main:React.FC = () => {
                                                         </p>
                                                 </div>
                                         </div>
-                                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center m-5 mt-0 lg:pl-14 second_grid_adjustment -mt-28 md:-mt-20">
+                                        <div className={`grid grid-cols-1 lg:grid-cols-2 gap-6 items-center m-5 mt-0 lg:pl-14 second_grid_adjustment -mt-28 md:-mt-20 ${aboutPart2 ? 'visibility_false slideRightToLeft' : 'visibility_true '}`}>
                                                 <div className="justify-center w-full md:pr-10 md:pt-7 items-center text-center md:text-left adjust_margintop_about_section2">
                                                         <h2 className="text-2xl lg:text-4xl font-normal ">How it <span>Works </span></h2>
                                                         <br />
@@ -190,12 +205,12 @@ export const Main:React.FC = () => {
                                 
                         </div>
 
-                        <div className="main-main4 text-center text-white mt-24 md:mt-36">
-                                <div>
-                                        <h2 className="text-3xl lg:text-4xl tracking-wide mb-5">Our <span>Team</span></h2>
+                        <div className={`main-main4 text-center text-white mt-24 md:mt-36`}>
+                                <div className={`${teamPart ? 'visibility_false slideDown' : 'visibility_true '}`}>
+                                        <h2 className={`text-3xl lg:text-4xl tracking-wide mb-5`}>Our <span>Team</span></h2>
                                         <p className="tracking-wide text-base lg:text-xl" >Our Highly Qualified And Skilled Team</p>
                                 </div>
-                                <div className="main-main4-overflow">
+                                <div className={`main-main4-overflow ${teamPart2 ? 'visibility_false slideDown' : 'visibility_true '}`}>
                                       
                                         <div className="main-main4-contain">
                                                 
