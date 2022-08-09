@@ -3,6 +3,7 @@ import '../css/starbackground.css'
 import { Loader } from './Loader'
 import { useState, useRef, useEffect } from 'react'
 import '../css/slideanimation.css'
+import { Coin} from '../components/Coin'
 
 interface cardArrayTypes {
         image: string,
@@ -72,9 +73,9 @@ export const Main:React.FC = () => {
                         <div id='stars3'></div>
                         <div className="main-main p-10 pb-0 pt-0 lg:pt-10" style={{overflow: 'hidden'}}>
                                 <div className="main__bg__cover">
-                                        <div className="main__bg"></div>
+                                        {/* <div className="main__bg"></div>
                                         <div className="main__bg layer1"></div>
-                                        <div className="main__bg layer2"></div>
+                                        <div className="main__bg layer2"></div> */}
                                 </div>
                                                         
                                 <div className="main-main-in">
@@ -141,7 +142,8 @@ export const Main:React.FC = () => {
                                                                 cardArray.map((e, i) => 
                                                                         (
                                                                                 <div className="main-content-box p-4 text-left ml-8 mr-8" key={i}>      
-                                                                                        <img src={`${e.image}`} alt="fir" />
+                                                                                        {/* <img src={`${e.image}`} alt="fir" /> */}
+                                                                                        < Coin />
                                                                                         <h2 className="text-lg lg:text-2xl p-2 pl-0 lg:tracking-wide ">{e.h2}</h2>
                                                                                         <p className="tracking-wide text-sm lg:text-lg mb-7">{e.p}</p>
                                                                                         <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
