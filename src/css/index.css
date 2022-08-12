@@ -474,6 +474,40 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
         margin-top: 0px;
 }
 
+/* range */
+.range_cont {
+        margin: auto;
+        text-align: center;
+}
+.range_cont h3 {
+        font-size: 49px;
+        font-weight: 100;
+}
+.gold {
+        
+        color: #ffbd0b;
+}
+input[type="range"] {
+        color: white;
+        background-color: #02244b;
+        
+        width: 250px;
+        height: 2px;
+        appearance: none;
+        background: #ffbd0b;
+        /* outline: navajowhite; */
+}
+.range_input::-webkit-slider-thumb {
+
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        background: #fff;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        /* box-shadow: -407px 0 0 400px #27a0ff; */
+        cursor: pointer;
+}
 
 
 

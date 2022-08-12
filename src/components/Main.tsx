@@ -15,10 +15,10 @@ interface cardArrayTypes {
 
 
 const cardArray:cardArrayTypes[] = [
-        { image: 'https://images.unsplash.com/photo-1550565118-3a14e8d0386f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vbmV5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60', h2: 'Are you a Music Artist ?', p: <>You Can Submit Your Song <br />For Distribution</>, submit: 'Submit Music', plus: true },
-        { image: 'https://images.unsplash.com/photo-1561414927-6d86591d0c4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uZXl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60', h2: 'The Box', p: <>Roddy Ricch <br />85% Available Stocks</>, submit: 'Execute Order', plus: false },
-        { image: 'https://images.unsplash.com/photo-1550565118-3a14e8d0386f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vbmV5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60', h2: 'No Guidance', p: <>Chris Brown ft Drake <br />65% Available Stocks</>, submit: 'Execute Order', plus: false },
-        { image: 'https://images.unsplash.com/photo-1561414927-6d86591d0c4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uZXl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60', h2: 'Are you a Music Artist ?', p: <>You Can Submit Your Song <br />For Distribution</>, submit: 'Submit Music', plus: true }
+        { image: 'https://images.unsplash.com/photo-1550565118-3a14e8d0386f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vbmV5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60', h2: 'ethereum', p: <>You Can Submit Your Song <br />For Distribution</>, submit: 'Submit Music', plus: true },
+        { image: 'https://images.unsplash.com/photo-1561414927-6d86591d0c4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uZXl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60', h2: 'solana', p: <>Roddy Ricch <br />85% Available Stocks</>, submit: 'Execute Order', plus: false },
+        { image: 'https://images.unsplash.com/photo-1550565118-3a14e8d0386f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vbmV5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60', h2: 'bitcoin', p: <>Chris Brown ft Drake <br />65% Available Stocks</>, submit: 'Execute Order', plus: false },
+        { image: 'https://images.unsplash.com/photo-1561414927-6d86591d0c4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uZXl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60', h2: 'anything', p: <>You Can Submit Your Song <br />For Distribution</>, submit: 'Submit Music', plus: true }
 ]
 
 
@@ -32,8 +32,29 @@ export const Main:React.FC = () => {
         const [ aboutPart2, setaboutPart2 ] = useState<boolean>(false)
         const [ teamPart, setteamPart ] = useState<boolean>(false)
         const [ teamPart2, setteamPart2 ] = useState<boolean>(false)
+        
+        const [ rangeValue, setrangeValue ] = useState<number>(50)
 
         const landingpageText = useRef<any>(null)
+
+        const rangeControl = useRef<any>(null)
+
+        const rangeControlDiv = useRef<any>(null)
+
+        // input range functionality
+        // function decimalSeparator(number:number) {
+        //         return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        // }
+
+
+        const handleRange = (e: any) => {
+                setrangeValue(e.currentTarget.value)
+
+        }
+                        // rangeControlDiv.current.tex
+
+        
+        // input range functionality end
         
         const handleX = () => {
                 setLoading(true)
@@ -141,14 +162,36 @@ export const Main:React.FC = () => {
                                                         {
                                                                 cardArray.map((e, i) => 
                                                                         (
-                                                                                <div className="main-content-box p-4 text-left ml-8 mr-8" key={i}>      
+                                                                                <div className="main-content-box p-4 text-left ml-8 mr-8" key={i}>  
+
+                                                                                    
+                                                                                        <h3 className='pb-5 uppercase text-2xl font-light tracking-widest'>
+                                                                                                {e.h2}   
+                                                                                        </h3>
                                                                                         {/* <img src={`${e.image}`} alt="fir" /> */}
                                                                                         < Coin />
-                                                                                        <h2 className="text-lg lg:text-2xl p-2 pl-0 lg:tracking-wide ">{e.h2}</h2>
-                                                                                        <p className="tracking-wide text-sm lg:text-lg mb-7">{e.p}</p>
-                                                                                        <button className="text-center tracking-wide text-sm lg:text-xl font-medium">
-                                                                                                {e.plus && <span className="text-2xl lg:text-4xl pr-4">+</span>}
-                                                                                                {e.submit}
+                                                                                        {/* <h2 className="text-lg lg:text-2xl p-2 pl-0 lg:tracking-wide ">{e.h2}</h2>
+                                                                                        <p className="tracking-wide text-sm lg:text-lg mb-7">{e.p}</p> */}
+
+                                                                                        <div ref={rangeControlDiv} className="range_cont pt-10">
+
+                                                                                                
+                                                                                                <h3 className={`pb-5 ${rangeValue == 1000 ? 'gold' : ''}`}>
+                                                                                                        $ {rangeValue}        
+                                                                                                </h3>
+
+                                                                                                <input 
+                                                                                                        type="range"
+                                                                                                        min="100"
+                                                                                                        max="1000"
+                                                                                                        value={rangeValue}
+                                                                                                        ref={rangeControl}
+                                                                                                        onInput={handleRange}
+                                                                                                        className='mb-10 range_input'
+                                                                                                />
+                                                                                        </div>
+                                                                                        <button className="text-center tracking-widest text-sm lg:text-xl font-medium capitalize">
+                                                                                                Buy Shares
                                                                                         </button>
                                                                                 </div>
                                                                         )  
