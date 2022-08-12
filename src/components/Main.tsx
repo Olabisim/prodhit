@@ -176,7 +176,7 @@ export const Main:React.FC = () => {
                                                                                         <div ref={rangeControlDiv} className="range_cont pt-10">
 
                                                                                                 
-                                                                                                <h3 className={`pb-5 ${rangeValue == 1000 ? 'gold' : ''}`}>
+                                                                                                <h3 className={`pb-5 ${Number(rangeValue) === Number(1000) && 'gold'}`}>
                                                                                                         $ {rangeValue}        
                                                                                                 </h3>
 
