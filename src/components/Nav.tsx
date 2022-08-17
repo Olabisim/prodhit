@@ -55,7 +55,7 @@ export const Nav:React.FC = () => {
                                                 <h2 className='Navlogo text-white text-xl lg:text-2xl font-thin mt-2 p-4 pt-2 tracking-wide' > PRODHIT</h2>
                                         </div>
 
-                                        <ul className="hidden md:flex space-x-12">
+                                        <ul className="hidden lg:flex space-x-12">
                                                 <li><a href="#ss" className='nav-lisa active-nav-lisa hover:tracking-widest' >Home</a></li>
                                                 <li><a href="#ss" className='nav-lisa hover:tracking-widest' >About Us</a></li>
                                                 <li className="flex relative group">
@@ -75,7 +75,7 @@ export const Nav:React.FC = () => {
                                         </ul>
 
                                         
-                                        <div className='hidden md:flex'>
+                                        <div className='hidden lg:flex'>
                                                 <a href="#ss" className="Nav-button text-white m-2" role="button" onClick={() => handleConnect()}>
                                                         {
                                                                 loading
@@ -91,7 +91,7 @@ export const Nav:React.FC = () => {
                                         
                                         {/* <!-- Mobile menu icon --> */}
                                         {/* <div dangerouslySetInnerHTML={{__html: alpinetemplate}} ></ div> */}
-                                                <div className='block md:hidden mobile_nav_icon p-3' onClick={() => handleX()}>
+                                                <div className='block lg:hidden mobile_nav_icon p-3' onClick={() => handleX()}>
                                                         <div ref={li1} ></div>
                                                         <div ref={li2}></div>
                                                         <div ref={li3}></div>
@@ -99,7 +99,7 @@ export const Nav:React.FC = () => {
                                         </div>
                                 
                                         {/* <!-- Mobile menu --> */}
-                                        <div className="md:hidden flex justify-center mt-3 w-full">
+                                        <div className="lg:hidden flex justify-center mt-3 w-full">
                                                 <div id="mobile-menu" className="mobile-menu absolute top-23 w-full" ref={mobileMenu}> 
                                                         {/* <!-- add hidden here later --> */}
                                                         <ul className="main_menu_bg shadow-lg leading-9 font-bold h-screen">

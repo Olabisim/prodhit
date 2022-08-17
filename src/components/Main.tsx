@@ -165,7 +165,7 @@ export const Main:React.FC = () => {
                                                                                 <div className="main-content-box p-4 text-left ml-8 mr-8" key={i}>  
 
                                                                                     
-                                                                                        <h3 className='pb-5 uppercase text-2xl font-light tracking-widest'>
+                                                                                        <h3 className='pb-5 uppercase text-base md:text-xl font-black tracking-widest'>
                                                                                                 {e.h2}   
                                                                                         </h3>
                                                                                         {/* <img src={`${e.image}`} alt="fir" /> */}
@@ -206,7 +206,7 @@ export const Main:React.FC = () => {
 
                         <div className="main-main3 text-white p-1 pb-16 md:pb-1">
 
-                                <div className="container mx-auto">
+                                <div className="container mx-auto pb-20 lg:pb-0 ">
                                                 
                                         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-6 items-center m-5 mt-0 ${aboutPart1 ? 'visibility_false slideLeftToRight' : 'visibility_true '}`}>
                                                 <div className={`flex justify-center`}>

@@ -490,7 +490,7 @@ background: linear-gradient(90deg, #B106FA 0%, #2D3FFB 70.83%);
 input[type="range"] {
         color: white;
         background-color: #02244b;
-        
+        opacity: 1;
         width: 250px;
         height: 2px;
         appearance: none;
@@ -513,11 +513,30 @@ input[type="range"] {
 
 /* media queries */
 
+@media screen and (max-width: 1280px) {
 
-@media screen and (max-width: 780px) {
+        .range_cont h3 {
+                font-size: 35px;
+                font-weight: 100;
+        }
+        
+        input[type="range"] {
+                width: 190px;
+        }
+        
+        /* .main-content {
+                width: 1400px;
+                height: 530px;
+        } */
+
+}
+
+@media screen and (max-width: 1280px) {
+        
         
         .main-content {
                 width: 1400px;
+                height: 530px;
         }
         .main-main4-div1 {
                 width: 250px;
@@ -539,7 +558,7 @@ input[type="range"] {
                 width: 100%;
         }
         .main-content-box {
-                height: 442px;
+                height: 530px;
                 width: 243px;
         }
 
@@ -590,5 +609,10 @@ input[type="range"] {
         .heading_main_text {
                 
                 font-size: 1.8em;
+        }
+        
+        .range_cont h3 {
+                font-size: 35px;
+                font-weight: 100;
         }
 }
