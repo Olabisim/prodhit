@@ -3,6 +3,7 @@ import 'alpinejs'
 import '../css/index.css'
 import { useRef, useState } from 'react'
 import {Loader} from './Loader'
+import { ConnectWallet } from './ConnectWallet'
 
 // const alpinetemplate:string = `
 // <button id="mobile-icon" className="md:hidden">
@@ -76,7 +77,7 @@ export const Nav:React.FC = () => {
 
                                         
                                         <div className='hidden lg:flex'>
-                                                <a href="#ss" className="Nav-button text-white m-2" role="button" onClick={() => handleConnect()}>
+                                                {/* <a href="#ss" className="Nav-button text-white m-2" role="button" onClick={() => handleConnect()}>
                                                         {
                                                                 loading
                                                                 ?
@@ -84,7 +85,8 @@ export const Nav:React.FC = () => {
                                                                 :
                                                                 'Connect Wallet'
                                                         }
-                                                </a>
+                                                </a> */}
+                                                <ConnectWallet />
                                                 <img src="../../avatar.png " className="Nav-avatar mt-3" alt="Tailwindcss Navigation" />
 
                                         </div>
