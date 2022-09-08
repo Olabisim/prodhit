@@ -2,7 +2,7 @@
 import 'alpinejs'
 import '../css/index.css'
 import { useRef, useState } from 'react'
-import {Loader} from './Loader'
+// import {Loader} from './Loader'
 import { ConnectWallet } from './ConnectWallet'
 
 // const alpinetemplate:string = `
@@ -15,7 +15,7 @@ import { ConnectWallet } from './ConnectWallet'
 export const Nav:React.FC = () => {
 
         const [toggle, setToggle] = useState<boolean>(false)
-        const [ loading, setLoading ] = useState<boolean>(false)
+        // const [ loading, setLoading ] = useState<boolean>(false)
 
         const li1 = useRef<any>(null)
         const li2 = useRef<any>(null)
@@ -37,11 +37,11 @@ export const Nav:React.FC = () => {
                 setToggle(!toggle)
         }
 
-        const handleConnect = () => {
-                setLoading(true)
-                setTimeout(() => setLoading(false), 2000)
-                console.log('clicked')
-        }
+        // const handleConnect = () => {
+        //         setLoading(true)
+        //         setTimeout(() => setLoading(false), 2000)
+        //         console.log('clicked')
+        // }
 
         return (
                 <>
